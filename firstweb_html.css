@@ -1,0 +1,43 @@
+
+
+
+table {
+    color:firebrick;
+}
+
+nav > img {
+    background-color: white;
+}
+
+footer {
+    background-color: black;
+    color: white;
+    font-variant: small-caps;
+    font-family: sans-serif;
+    float: inline-end;
+}
+footer > a {
+    padding: 1.2em;
+
+}
+
+h1 {
+    font-family: 'Source Code Pro', monospace;
+    text-align: center;  
+    text-shadow: 1px 1px; 
+    animation: infinite;
+    animation-timing-function: ease-in;
+
+}
+
+h2 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+p {
+    text-align: center;
+    
+}
+
+/* Go to this website for CSS instructions -- https://www.codecademy.com/learn/learn-css/modules/syntax-and-selectors/cheatsheet */ 
+

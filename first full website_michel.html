@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Travel Site</title>
+
+    <link rel="stylesheet" type = "text/css" href="firstweb_html.css">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Source+Code+Pro&display=swap" rel="stylesheet">
+
+</head>
+<body>
+
+          <!-- I want a masthead with a search bar,a logo section, links, 
+          and sign-in/cart option set to the right -->
+  
+      <!-- break up the pieces via html-->
+      <nav>
+
+        
+        <!-- logo element / more than likely an h1 or a div with nested text -->
+        <img src="http://www.clker.com/cliparts/5/j/r/G/y/p/shopping-cart-icon.svg"
+        width=100>
+        <div>
+          
+        </div>
+        <!-- list of links / either organized as a ul or just spans -->
+        <span>Bio</span>
+        <span>Top Picks</span>
+        <span>Contact</span>
+
+        <form id="form">
+          <input type="search" id="query" name="q"
+          placeholder="Search...">
+          <button><img src="https://openclipart.org/image/800px/svg_to_png/213239/Search-icon.png" width="10"></button>
+        </form>
+  
+        <!-- search bar / can be created as a positioned div with exact dimensions -->
+  
+        <!-- signin and cart floated to the right and grouped together in a div -->
+
+        <a href="second page to first web.html">Next Page</a>
+
+      </nav>
+
+    <style>
+        body {
+          margin: 1%;
+          background-color: gainsboro;
+        }
+  
+        nav {
+          padding: 1.2em;
+          background-color: black;
+          color: white;
+          font-variant: small-caps;
+          font-family: sans-serif;
+        }
+  
+        div {
+          display: inline-block;
+          vertical-align: middle;
+        }
+  
+        div > span:first-child {
+          font-size: 1.5em;
+        }
+  
+        nav > span {
+          margin: 1em;
+
+        }
+
+        nav > a {
+          float: right;
+          color: white;
+        }
+
+        nav > form {
+          text-align: center;
+        }
+
+        form > p {
+          text-align: left;
+        }
+
+        footer > a {
+          color: white;
+        }
+      </style>
+    </head>
+    <body>
+    
+
+      <h1 class="logo">Welcome to my Travel Site</h1>
+
+    <p>This site is all about where I want to travel.</p>
+
+    <h2>Here are some places I'd like to visit</h2>
+
+ 
+   <ul>
+       <span>
+        <img src="https://upload.wikimedia.org/wikipedia/en/9/9a/Flag_of_Spain.svg" 
+    width="50">
+          <a href="http://www.spain.info/en_US/" target="_blank">Spain</a>
+       </span>
+        <span>
+            <img src="https://upload.wikimedia.org/wikipedia/en/0/03/Flag_of_Italy.svg"
+      width="50">
+          <a href="http://www.italia.it/en/home.html" target="_blank">Italy</a>
+        </span>
+        <span>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/f/f6/Flag_of_Aruba.svg" 
+      width="50">
+          <a href="http://www.arubatourism.com/" target="_blank">Aruba</a>
+        </span>
+        <span>
+            <img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg" 
+      width="50">
+          <a href="https://www.travelalaska.com/" target="_blank">Alaska</a>
+        </span>
+    </ul>
+
+    <!-- external hyperlink opens in a new window/tab 
+
+    <a href="https://www.google.com" target="_blank"><google.com</a>
+    <br>
+    <a href="https://www.google.com">google.com in same window</a>
+
+    <a href="https://developer.mozilla.org/en-US/" target="_blank">
+    <img 
+      src="https://mdn.mozillademos.org/files/6851/mdn_logo.png" 
+      width="50"/>
+-->
+    </a>
+
+    <table>
+         </tr>
+             <th>Destination</th>
+             <th>Capital</th>
+             <th>Official Language</th>
+             </tr>
+             <tr>
+             <td>Spain</td>
+             <td>Madrid</td>
+             <td>Spanish</td>
+            </tr>
+            <tr>
+            <td>Italy</td>
+            <td>Rome</td>
+            <td>Italian</td>
+            </tr>
+            <tr>
+            <td>Aruba</td>
+            <td>Oranjestad</td>
+            <td>Dutch</td>
+            </tr>
+            <tr>
+            <td>Alaska</td>
+            <td>Juneau</td>
+            <td>n/a</td>
+         </tr>
+        </table>
+
+            <h2>Where do you want to visit?</h2>
+            <form>
+                <label for="name"></label>
+
+                <p>Select any that apply: </p>
+                <label for="spain">Spain</label>
+                <input type="checkbox" id="spain" name="spain"><br>
+
+                <label for="france">France</label>
+                <input type="checkbox" id="france" name="france"><br>
+
+                <label for="portugal">Portgual</label>
+                <input type="checkbox" id="portugal" name="portgual"><br>
+
+                <label for="china">China</label>
+                <input type="checkbox" id="china" name="china"><br>
+
+                <label for="type">What is your favorite type of travel locations?</p>
+                    <select id="type" name="type">
+                        <option value="beach">Beach</option>
+                        <option value="mountains">Mountains</option>
+                        <option value="city" selected>City</option>
+                    </select>
+
+                    <br /><br />
+
+                <textarea id="bio" name="bio" rows="7" cols="50">
+                    Tell me a bit more about yourself.
+                </textarea>
+                <br /><br />
+                <input type="submit" value="Ok Go!" />
+                </form>
+            </form>
+
+<footer>Want to see more, Head to
+
+  <a href="second page to first web.html">Next Page</a>
+</footer>
+</body>
+</html>
+
+
